@@ -33,7 +33,7 @@ h1 {
 
 form {
     display: flex;
-    background: #202020; /* Cor de fundo */
+    background: #23465ea6; 
     align-items: center;
     flex-direction: column;
     gap: 20px;
@@ -50,8 +50,8 @@ input {
     padding: 15px;
     outline: none;
     border: none;
-    background: #F4F4F4; /* Cor de fundo dos campos */
-    color: #202020; /* Cor do texto nos campos */
+    background: #F4F4F4; 
+    color: #202020; 
 }
 
 input:focus {
@@ -83,21 +83,21 @@ input:focus {
 
 table {
     color: white;
-    background: #202020; /* Cor de fundo da tabela */
+    background: #202020; 
 }
 
 th, td {
     padding: 15px;
     text-align: justify;
-    border: 1px solid #202020; /* Cor da borda da célula */
+    border: 1px solid #202020;
 }
 
-/* Estilo para as linhas pares da tabela */
+
 tr:nth-child(even) {
-    background-color: #202020; /* Cor de fundo das linhas pares */
+    background-color: #202020; 
 }
 
-/* Estilo para o hover nas linhas da tabela */
+
 tr:hover {
     background-color: #202020;
     color: white;
