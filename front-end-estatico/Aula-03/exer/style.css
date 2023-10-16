@@ -79,6 +79,16 @@ input:focus {
     
 }
 
+tr{
+    display: flex;
+    
+    justify-content: center;
+    gap: 40px;
+}
+th{
+    margin: 20px;
+}
+/* Estilo para a tabela */
 .tabela {
     border: 1px solid #ccc;
     border-radius: 5px;
