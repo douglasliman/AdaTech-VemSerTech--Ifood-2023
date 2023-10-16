@@ -1,11 +1,11 @@
-document.getElementById('myForm').addEventListener('submit', function (event) {
+document.getElementById('form').addEventListener('submit', function (event) {
   event.preventDefault();
 
   const firstname = document.getElementById('firstname').value;
   const lastname = document.getElementById('lastname').value;
   const email = document.getElementById('email').value;
-  const cargo = document.getElementById('cargo').value; // Adicionado
-  const salario = document.getElementById('salario').value; // Adicionado
+  const cargo = document.getElementById('cargo').value; 
+  const salario = document.getElementById('salario').value; 
 
   const apiUrl = 'https://crudcrud.com/api/4ce1796f97ba4e6b9428eccbd7f7de8a/inscritos';
 
@@ -13,8 +13,8 @@ document.getElementById('myForm').addEventListener('submit', function (event) {
     firstname,
     lastname,
     email,
-    cargo, // Adicionado
-    salario // Adicionado
+    cargo, 
+    salario 
   };
 
   fetch(apiUrl, {
@@ -38,7 +38,6 @@ document.getElementById('myForm').addEventListener('submit', function (event) {
       const rowEmail = newRow.insertCell(2);
       rowEmail.innerHTML = data.email;
 
-      // Adicionados novos campos na tabela
       const rowCargo = newRow.insertCell(3);
       rowCargo.innerHTML = data.cargo;
 
@@ -62,6 +61,6 @@ function cleanInput() {
   firstname.value = '';
   lastname.value = '';
   email.value = '';
-  cargo.value = ''; // Adicionado
-  salario.value = ''; // Adicionado
+  cargo.value = ''; 
+  salario.value = ''; 
 }
