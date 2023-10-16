@@ -16,7 +16,7 @@ body {
 }
 
 h1 {
-    color: rgba(255, 255, 255, 0.788);
+    color: white;
     font-size: 24px;
 }
 
@@ -33,7 +33,7 @@ h1 {
 
 form {
     display: flex;
-    background: #04364A;
+    background: #202020; /* Cor de fundo */
     align-items: center;
     flex-direction: column;
     gap: 20px;
@@ -50,7 +50,8 @@ input {
     padding: 15px;
     outline: none;
     border: none;
-    background: #F4F4F4;
+    background: #F4F4F4; /* Cor de fundo dos campos */
+    color: #202020; /* Cor do texto nos campos */
 }
 
 input:focus {
@@ -62,11 +63,13 @@ input:focus {
     justify-content: center;
     width: 100%;
 }
-.button{
+
+.button {
     width: 100%;
     display: flex;
     justify-content: center;
 }
+
 .button button {
     width: 100%;
     max-width: 250px;
@@ -76,51 +79,36 @@ input:focus {
     border-radius: 5px;
     color: white;
     cursor: pointer;
-    
 }
 
-tr{
-    display: flex;
-    
-    justify-content: center;
-    gap: 40px;
+table {
+    color: white;
+    background: #202020; /* Cor de fundo da tabela */
 }
-th{
-    margin: 20px;
-}
-/* Estilo para a tabela */
-.tabela {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 20px;
-  }
-  
 
-  .tabela th {
-    display: flex;
-    justify-content: flex-start;
- 
-    border: none;
-    color: #ffffff;
-    padding: 10px;
-    text-align: left;
-  }
-  
-  
-  .tabela td {
+th, td {
     padding: 15px;
-    text-align:  justify;
-    border: 1px solid #202020;
-  }
-  
-  .tabela table {
+    text-align: justify;
+    border: 1px solid #202020; /* Cor da borda da célula */
+}
+
+/* Estilo para as linhas pares da tabela */
+tr:nth-child(even) {
+    background-color: #202020; /* Cor de fundo das linhas pares */
+}
+
+/* Estilo para o hover nas linhas da tabela */
+tr:hover {
+    background-color: #202020;
+    color: white;
+}
+
+.tabela table {
     border-collapse: collapse;
     width: 100%;
-  }
-  
-  
-  .tabela th,
-  .tabela td {
+}
+
+.tabela th, .tabela td {
     width: 150px;
-  }
+    text-align: left;
+}
