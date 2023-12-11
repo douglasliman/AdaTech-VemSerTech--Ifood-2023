@@ -29,5 +29,3 @@ for (const pessoa of pessoas) {
   const imc = calcularIMC(pessoa);
   exibirIMC(pessoa.nome, imc);
 }
-
-console.log(pessoa.peso)

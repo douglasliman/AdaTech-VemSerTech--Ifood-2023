@@ -3,9 +3,6 @@
 
 Temos a lista de alunos com suas notas:
 
-```jsx
-
-```
 
 Utilize o método `map` para criar um novo objeto com o nome e a média de cada aluno.
 
